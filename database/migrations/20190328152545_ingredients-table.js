@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
       .string('ingredient_name')
       .unique('uq_ingredient_name')
       .notNullable();
-  }
+  })
 };
 
 exports.down = function(knex, Promise) {
